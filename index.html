@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+
+    <!-- Fuentes de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="/js/Display.js" ></script>
+    <script src="/js/Calculadora.js"></script>
+    <script src="/js/index.js" defer></script>
+</head>
+<body>
+    <header class="header"> Calculadora </header>
+
+    <main>
+        <div class="calculadora">
+            <div class="display">
+                <div id="data-operador-1">0</div>
+                <div id="data-operador-2">0</div>
+            </div>
+
+            <div class="botones">
+                <button class="btn-limpiar" onclick="display.borrarTodo()">C</button>
+                <button class="btn-borrar" onclick="display.borrar()">←</button>
+
+                <button class="btn-operador" value="dividir">/</button>
+
+                <button class="btn-numero">7</button>
+                <button class="btn-numero">8</button>
+                <button class="btn-numero">9</button>
+
+                <button class="btn-operador" value="multiplicar">x</button>
+
+                <button class="btn-numero">4</button>
+                <button class="btn-numero">5</button>
+                <button class="btn-numero">6</button>
+
+                <button class="btn-operador" value="restar">-</button>
+
+                <button class="btn-numero">1</button>
+                <button class="btn-numero">2</button>
+                <button class="btn-numero">3</button>
+
+                <button class="btn-operador" value="sumar">+</button>
+
+                <button class="btn-numero">0</button>
+                <button class="btn-numero">.</button>
+                <button id="igual" class="btn-operador" onclick="display.computar()">=</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
