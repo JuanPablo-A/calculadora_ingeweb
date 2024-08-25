@@ -1,4 +1,4 @@
-/* Crear "variables" en el CSS*/
+/** Globales **/
 :root{
     /* Fuentes */
     --fuenteHeading: 'PT sans', sans-serif;
@@ -22,13 +22,13 @@ html {
     box-sizing: inherit;
 }
 
-/** Globales **/
 body {
     background-color: var(--primario);
     font-size: 1.6rem;
     line-height: 1.5;
 }
 
+/* Estilos Header */
 header {
     font-family: var(--fuenteHeading);
     font-size: 5rem;
@@ -54,6 +54,7 @@ header {
     box-shadow: 1.5rem 1.5rem 0 rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos calculadora para celulares */
 @media (min-width: 480px) { 
     .calculadora {
         background-color: var(--secundario);
@@ -62,6 +63,7 @@ header {
         height: 70%;
         margin-top: 5rem;
     
+        /* Centrar la calculadora*/
         position: absolute;
         top: 50%;
         left: 50%;
@@ -70,6 +72,7 @@ header {
     
 }
 
+/* Estilos calculadora para tablets */
 @media (min-width: 768px) {
     .calculadora {
         background-color: var(--secundario);
@@ -85,6 +88,7 @@ header {
     }
 }
 
+/* Estilos del display, donde se muestran los calculos) */
 .display{
     background-color: var(--verde);
     width: 90%;
@@ -107,9 +111,11 @@ header {
         font-size: 2.5rem;
     }
 }
+
+/* Estilo de los botones */
 .botones {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* Posicionar 4 columnas iguales */
     gap: 0.5rem;
     width: 90%;
     margin: auto;
@@ -132,10 +138,11 @@ header {
     }
     
     .btn-borrar {
-        grid-column: span 2;
+        grid-column: span 2; /* El boton igual ocupa 2 columnas */
     }
+
     #igual {
-        grid-column: span 2;
+        grid-column: span 2; /* El boton igual ocupa 2 columnas */
         background-color: var(--color-botones);
 
         &:hover {
@@ -144,5 +151,16 @@ header {
     }
 }	
 
+.error {
+    background-color: #FF0000;
+    width: 50%;
+    color: #FFF;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--fuenteBotones);
+    border-radius: 1rem;
+    margin-top: 1rem;
 
-
+    margin: 3rem auto;
+}
