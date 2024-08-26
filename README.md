@@ -27,8 +27,9 @@ El proyecto está organizado de la siguiente manera:
 - **JS:** Carpeta que contiene los archivos JavaScript que manejan la lógica de la calculadora.
 
 ## Como ejecutar el proyecto 
-1. Debes clonar el repositorio en tu maquina local 
+1. Debes clonar el repositorio en tu maquina local
    ```bash
    git clone https://github.com/JuanPablo-A/calculadora_ingeweb.git
+   ```
 
 3. Abre el archivo index.html en tu navegador, puedes utilizar la extension de *HTML play* o *Live Server* para hacerlo
